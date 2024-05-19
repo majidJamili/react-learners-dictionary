@@ -13,14 +13,17 @@ function Word({word, remove, toggle}){
         remove(word.id)
     };
     return(
-        <ListItem>
-            <ListItemAvatar>
-            <Avatar>
-                <FormatColorTextIcon />
-            </Avatar>
-            </ListItemAvatar>
-            <ListItemText primary="Photos" secondary="Jan 9, 2014" />
-        </ListItem>
+        <p>
+            {word}
+        </p>
+        // <ListItem>
+        //     <ListItemAvatar>
+        //     <Avatar>
+        //         <FormatColorTextIcon />
+        //     </Avatar>
+        //     </ListItemAvatar>
+        //     <ListItemText primary="Photos" secondary="Jan 9, 2014" />
+        // </ListItem>
     )
 }
 

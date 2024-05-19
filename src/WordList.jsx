@@ -52,15 +52,14 @@ function WordList(){
 
     return (  
         <>
-                {words.map((item)=>(
-                            <p>{item.id}</p>
+            {words.map((item)=>(
+                <div>
+                    <Word key={item.id} word={item.word} remove={() => removeWord(item.id)} toggle={() => toggleWord(item.id)}  />
+                </div>
 
-        ))}
-
-        <SearchForm addWord={addWord} />
-        </>          
-
-
+            ))}
+            <SearchForm addWord={addWord} />
+        </>
       );
 }
 export default WordList; 
